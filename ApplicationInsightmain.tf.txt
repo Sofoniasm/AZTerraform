@@ -1,0 +1,72 @@
+terraform {
+  required_providers {
+    azurerm = {
+      source  = "hashicorp/azurerm"
+      version = ">= 2.0"
+    }
+  }
+}
+
+provider "azurerm" {
+  features {}
+}
+
+resource "azurerm_application_insights" "app_insights" {
+  name                = "AppCenterExport-StableDuel-Dev"
+  location            = "South Central US"
+  resource_group_name = "appcenter-export-StableDuel-Dev"
+  application_type    = "web"
+  kind                = "web"
+  tags = {
+    environment   = "dev"
+    subscription  = "StableDuel Production Subscription"
+  }
+}
+
+resource "azurerm_application_insights" "prod_api_insights" {
+  name                = "prod-sd-scus-api-insights"
+  location            = "Central US"
+  resource_group_name = "prod-sd-scus-api"
+  application_type    = "web"
+  kind                = "web"
+  tags = {
+    environment   = "prod"
+    subscription  = "StableDuel Production Subscription"
+  }
+}
+
+resource "azurerm_application_insights" "prod_service_insights" {
+  name                = "prod-sd-scus-api-service-insights"
+  location            = "South Central US"
+  resource_group_name = "prod-sd-scus-api"
+  application_type    = "web"
+  kind                = "web"
+  tags = {
+    environment   = "prod"
+    subscription  = "StableDuel Production Subscription"
+  }
+}
+
+resource "azurerm_application_insights" "qa_api_ai" {
+  name                = "qa-sd-scus-api-ai"
+  location            = "Central US"
+  resource_group_name = "qa-sd-scus-api"
+  application_type    = "web"
+  kind                = "web"
+  tags = {
+    environment   = "qa"
+    subscription  = "StableDuel Production Subscription"
+  }
+}
+
+resource "azurerm_application_insights" "qa_api2_app_insights" {
+  name                = "qa-sd-scus-api2-applicationinsights"
+  location            = "East US"
+  resource_group_name = "qa-sd-scus-api"
+  application_type    = "web"
+  kind                = "web"
+  tags = {
+    environment   = "qa"
+    subscription  = "StableDuel Production Subscription"
+  }
+}

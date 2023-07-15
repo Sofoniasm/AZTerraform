@@ -1,0 +1,17 @@
+variable "subscription_name" {
+  description = "Name of the subscription"
+  type        = string
+  default     = "StableDuel Production Subscription"
+}
+
+variable "subscription_id" {
+  description = "ID of the subscription"
+  type        = string
+  default     = "33a1efc6-8ad4-4bff-92a9-8545bac8a75f"
+}
+
+variable "subscription_role" {
+  description = "Role for the subscription"
+  type        = string
+  default     = "Owner"
+}

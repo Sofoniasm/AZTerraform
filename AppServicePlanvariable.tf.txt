@@ -1,0 +1,140 @@
+variable "asp_qasdscusapi_a125_name" {
+  type    = string
+  default = "ASP-qasdscusapi-a125"
+}
+
+variable "asp_qasdscusapi_a125_location" {
+  type    = string
+  default = "East US"
+}
+
+variable "asp_qasdscusapi_a125_resource_group" {
+  type    = string
+  default = "qa-sd-scus-api"
+}
+
+variable "asp_qasdscusapi_a125_subscription_id" {
+  type    = string
+  default = "StableDuel Production Subscription"
+}
+
+variable "asp_qasdscusapi_a125_kind" {
+  type    = string
+  default = "Linux"
+}
+
+variable "asp_qasdscusapi_a125_pricing_tier" {
+  type    = string
+  default = "Basic (B1: 1)"
+}
+
+variable "asp_qasdscusapi_a125_number_of_apps" {
+  type    = number
+  default = 1
+}
+
+variable "prod_sd_scus_api_plan_name" {
+  type    = string
+  default = "prod-sd-scus-api-plan"
+}
+
+variable "prod_sd_scus_api_plan_location" {
+  type    = string
+  default = "South Central US"
+}
+
+variable "prod_sd_scus_api_plan_resource_group" {
+  type    = string
+  default = "prod-sd-scus-api"
+}
+
+variable "prod_sd_scus_api_plan_subscription_id" {
+  type    = string
+  default = "StableDuel Production Subscription"
+}
+
+variable "prod_sd_scus_api_plan_kind" {
+  type    = string
+  default = "Linux"
+}
+
+variable "prod_sd_scus_api_plan_pricing_tier" {
+  type    = string
+  default = "Premium V2 (P1v2: 1)"
+}
+
+variable "prod_sd_scus_api_plan_number_of_apps" {
+  type    = number
+  default = 1
+}
+
+variable "qa_sd_scus_appservice_name" {
+  type    = string
+  default = "qa-sd-scus-appservice"
+}
+
+variable "qa_sd_scus_appservice_location" {
+  type    = string
+  default = "Central US"
+}
+
+variable "qa_sd_scus_appservice_resource_group" {
+  type    = string
+  default = "Premium V2 (P1v2: 1)"
+}
+
+variable "qa_sd_scus_appservice_subscription_id" {
+  type    = string
+  default = "StableDuel Production Subscription"
+}
+
+variable "qa_sd_scus_appservice_kind" {
+  type    = string
+  default = "Linux"
+}
+
+variable "qa_sd_scus_appservice_pricing_tier" {
+  type    = string
+  default = "qa-sd-scus-api"
+}
+
+variable "qa_sd_scus_appservice_number_of_apps" {
+  type    = number
+  default = 5
+}
+
+variable "stableduelasp01_name" {
+  type    = string
+  default = "stableduelasp01"
+}
+
+variable "stableduelasp01_location" {
+  type    = string
+  default = "Central US"
+}
+
+variable "stableduelasp01_resource_group" {
+  type    = string
+  default = "Basic (B2: 1)"
+}
+
+variable "stableduelasp01_subscription_id" {
+  type    = string
+  default = "StableDuel Production Subscription"
+}
+
+variable "stableduelasp01_kind" {
+  type    = string
+  default = "Linux"
+}
+
+variable "qa_sd_scus_appservice_pricing_tier" {
+  type    = string
+  default = "sd-test-rg01"
+}
+
+variable "qa_sd_scus_appservice_number_of_apps" {
+  type    = number
+  default = 2
+}
+  

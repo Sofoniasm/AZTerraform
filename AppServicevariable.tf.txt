@@ -1,0 +1,84 @@
+variable "app_services" {
+  type = list(object({
+    name               = string
+    location           = string
+    pricing_tier       = string
+    app_service_plan   = string
+    app_type           = string
+    subscription       = string
+  }))
+  default = [
+    {
+      name               = "api-container-dev"
+      location           = "Central US"
+      pricing_tier       = "PremiumV2"
+      app_service_plan   = "qa-sd-scus-appservice"
+      app_type           = "web App"
+      subscription       = "StableDuel Production Subscription"
+    },
+    {
+      name               = "api-container-dev-celerytest"
+      location           = "Central US"
+      pricing_tier       = "PremiumV2"
+      app_service_plan   = "qa-sd-scus-appservice"
+      app_type           = "web App"
+      subscription       = "StableDuel Production Subscription"
+    },
+    {
+      name               = "prod-sd-scus-api-service"
+      location           = "South Central US"
+      pricing_tier       = "PremiumV2"
+      app_service_plan   = "qa-sd-scus-appservice"
+      app_type           = "web App"
+      subscription       = "StableDuel Production Subscription"
+    },
+    {
+      name               = "qa-sd-scus-api"
+      location           = "Central US"
+      pricing_tier       = "PremiumV2"
+      app_service_plan   = "qa-sd-scus-appservice"
+      app_type           = "web App"
+      subscription       = "StableDuel Production Subscription"
+    },
+    {
+      name               = "qa-sd-scus-api2"
+      location           = "East US"
+      pricing_tier       = "Basic"
+      app_service_plan   = "qa-sd-scus-appservice"
+      app_type           = "web App"
+      subscription       = "StableDuel Production Subscription"          
+    },
+    {
+      name               = "qa-sd-scus-grafana"
+      location           = "Central US"
+      pricing_tier       = "Premium V2"
+      app_service_plan   = "qa-sd-scus-appservice"
+      app_type           = "web App"
+      subscription       = "StableDuel Production Subscription"
+    },
+    {
+      name               = "qa-sd-scus-grafana"
+      location           = "Central US"
+      pricing_tier       = "Premium V2"
+      app_service_plan   = "qa-sd-scus-appservice"
+      app_type           = "web App"
+      subscription       = "StableDuel Production Subscription"
+    },
+    {
+      name               = "sd-test-rg01-api"
+      location           = "Central US"
+      pricing_tier       = "Basic"
+      app_service_plan   = "stableduelasp01"
+      app_type           = "web App"
+      subscription       = "StableDuel Production Subscription"
+    },
+    {
+      name               = "sd-test-rg01-celery "
+      location           = "Central US"
+      pricing_tier       = "Basic"
+      app_service_plan   = "stableduelasp01"
+      app_type           = "web App"
+      subscription       = "StableDuel Production Subscription"
+    }
+ ]
+}

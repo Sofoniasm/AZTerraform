@@ -1,0 +1,18 @@
+terraform {
+  required_providers {
+    azurerm = {
+      source  = "hashicorp/azurerm"
+      version = ">= 2.0"
+    }
+  }
+}
+
+provider "azurerm" {
+  features {}
+}
+
+resource "azurerm_subscription" "example_subscription" {
+  name             = var.subscription_name
+  subscription_id  = var.subscription_id
+  role             = var.subscription_role
+}

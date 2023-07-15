@@ -1,0 +1,11 @@
+output "prod_sd_scus_db_mssql_stableduel_name" {
+  value = azurerm_mssql_database.prod_sd_scus_db_mssql_stableduel.name
+}
+
+output "qa_stableduel_name" {
+  value = azurerm_mssql_database.qa_stableduel.name
+}
+
+output "stableduel_name" {
+  value = azurerm_mssql_database.stableduel.name
+}

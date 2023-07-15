@@ -1,0 +1,74 @@
+variable "app_insights_name" {
+  type        = string
+  description = "Name of the App Insights resource for AppCenterExport-StableDuel-Dev"
+}
+
+variable "app_insights_location" {
+  type        = string
+  description = "Location of the App Insights resource for AppCenterExport-StableDuel-Dev"
+}
+
+variable "app_insights_resource_group" {
+  type        = string
+  description = "Resource group of the App Insights resource for AppCenterExport-StableDuel-Dev"
+}
+
+variable "prod_api_insights_name" {
+  type        = string
+  description = "Name of the App Insights resource for prod-sd-scus-api-insights"
+}
+
+variable "prod_api_insights_location" {
+  type        = string
+  description = "Location of the App Insights resource for prod-sd-scus-api-insights"
+}
+
+variable "prod_api_insights_resource_group" {
+  type        = string
+  description = "Resource group of the App Insights resource for prod-sd-scus-api-insights"
+}
+
+variable "prod_service_insights_name" {
+  type        = string
+  description = "Name of the App Insights resource for prod-sd-scus-api-service-insights"
+}
+
+variable "prod_service_insights_location" {
+  type        = string
+  description = "Location of the App Insights resource for prod-sd-scus-api-service-insights"
+}
+
+variable "prod_service_insights_resource_group" {
+  type        = string
+  description = "Resource group of the App Insights resource for prod-sd-scus-api-service-insights"
+}
+
+variable "qa_api_ai_name" {
+  type        = string
+  description = "Name of the App Insights resource for qa-sd-scus-api-ai"
+}
+
+variable "qa_api_ai_location" {
+  type        = string
+  description = "Location of the App Insights resource for qa-sd-scus-api-ai"
+}
+
+variable "qa_api_ai_resource_group" {
+  type        = string
+  description = "Resource group of the App Insights resource for qa-sd-scus-api-ai"
+}
+
+variable "qa_api2_app_insights_name" {
+  type        = string
+  description = "Name of the App Insights resource for qa-sd-scus-api2-applicationinsights"
+}
+
+variable "qa_api2_app_insights_location" {
+  type        = string
+  description = "Location of the App Insights resource for qa-sd-scus-api2-applicationinsights"
+}
+
+variable "qa_api2_app_insights_resource_group" {
+  type        = string
+  description = "Resource group of the App Insights resource for qa-sd-scus-api2-applicationinsights"
+}

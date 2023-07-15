@@ -1,0 +1,14 @@
+resource "azurerm_storage_account" "storage" {
+  for_each = { for sa in var.storage_accounts : sa.name => sa }
+
+  name                     = each.value.name
+  resource_group_name      = each.value.resource_group
+  location                 = each.value.location
+  account_tier             = each.value.kind
+  account_replication_type = "LRS"
+
+  tags = {
+    Subscription = each.value.subscription
+  }
+}
+

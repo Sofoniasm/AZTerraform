@@ -1,0 +1,59 @@
+output "app_insights_name" {
+  value = azurerm_application_insights.app_insights.name
+}
+
+output "app_insights_location" {
+  value = azurerm_application_insights.app_insights.location
+}
+
+output "app_insights_resource_group" {
+  value = azurerm_application_insights.app_insights.resource_group_name
+}
+
+output "prod_api_insights_name" {
+  value = azurerm_application_insights.prod_api_insights.name
+}
+
+output "prod_api_insights_location" {
+  value = azurerm_application_insights.prod_api_insights.location
+}
+
+output "prod_api_insights_resource_group" {
+  value = azurerm_application_insights.prod_api_insights.resource_group_name
+}
+
+output "prod_service_insights_name" {
+  value = azurerm_application_insights.prod_service_insights.name
+}
+
+output "prod_service_insights_location" {
+  value = azurerm_application_insights.prod_service_insights.location
+}
+
+output "prod_service_insights_resource_group" {
+  value = azurerm_application_insights.prod_service_insights.resource_group_name
+}
+
+output "qa_api_ai_name" {
+  value = azurerm_application_insights.qa_api_ai.name
+}
+
+output "qa_api_ai_location" {
+  value = azurerm_application_insights.qa_api_ai.location
+}
+
+output "qa_api_ai_resource_group" {
+  value = azurerm_application_insights.qa_api_ai.resource_group_name
+}
+
+output "qa_api2_app_insights_name" {
+  value = azurerm_application_insights.qa_api2_app_insights.name
+}
+
+output "qa_api2_app_insights_location" {
+  value = azurerm_application_insights.qa_api2_app_insights.location
+}
+
+output "qa_api2_app_insights_resource_group" {
+  value = azurerm_application_insights.qa_api2_app_insights.resource_group_name
+}

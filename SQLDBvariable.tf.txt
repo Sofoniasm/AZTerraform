@@ -1,0 +1,73 @@
+variable "prod_sd_scus_db_mssql_stableduel_name" {
+  type    = string
+  default = "prod-sd-scus-db-mssql-stableduel"
+}
+
+variable "prod_sd_scus_db_mssql_stableduel_server" {
+  type    = string
+  default = "prod-sd-scus-db-mssql"
+}
+
+variable "prod_sd_scus_db_mssql_stableduel_edition" {
+  type    = string
+  default = "Standard"
+}
+
+variable "prod_sd_scus_db_mssql_stableduel_pricing_tier" {
+  type    = string
+  default = "Standard S3: 100 DTUs"
+}
+
+variable "prod_sd_scus_db_mssql_stableduel_location" {
+  type    = string
+  default = "South Central US"
+}
+
+variable "qa_stableduel_name" {
+  type    = string
+  default = "QAStableDuel"
+}
+
+variable "qa_stableduel_server" {
+  type    = string
+  default = "sd-scus-qa-mssql-server"
+}
+
+variable "qa_stableduel_edition" {
+  type    = string
+  default = "Standard"
+}
+
+variable "qa_stableduel_pricing_tier" {
+  type    = string
+  default = "Standard S1: 20 DTUs"
+}
+
+variable "qa_stableduel_location" {
+  type    = string
+  default = "South Central US"
+}
+
+variable "stableduel_name" {
+  type    = string
+  default = "StableDuel"
+}
+
+variable "stableduel_server" {
+  type    = string
+  default = "sd-scus-qa-mssql-server"
+}
+
+variable "stableduel_edition" {
+  type    = string
+  default = "Standard"
+}
+variable "qa_stableduel_pricing_tier" {
+  type    = string
+  default = "Standard S1: 50 DTUs"
+}
+
+variable "qa_stableduel_location" {
+  type    = string
+  default = "South Central US"
+}

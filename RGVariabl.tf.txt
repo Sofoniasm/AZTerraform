@@ -1,0 +1,19 @@
+variable "resource_groups" {
+  type = map(string)
+  description = "Map of resource group names and locations"
+  default = {
+    "appcenter-export-StableDuel-Dev" = "South Central US"
+    "cloud-shell-storage-westeurope" = "West Europe"
+    "DefaultResourceGroup-CUS" = "Central US"
+    "DefaultResourceGroup-EUS" = "East US"
+    "LogAnalyticsDefaultResources" = "Central US"
+    "NetworkWatcherRG" = "Central US"
+    "prod-sd-scus-api" = "South Central US"
+    "prod-sd-scus-db" = "South Central US"
+    "qa-sd-scus-api" = "East US 2"
+    "qa-sd-scus-db" = "South Central US"
+    "rg-shared-services" = "South Central US"
+    "sd-test-rg01" = "Central US"
+    "VisualStudioOnline-E85A747DAE094229B5A59CA944B7C313" = "Central US"
+  }
+}

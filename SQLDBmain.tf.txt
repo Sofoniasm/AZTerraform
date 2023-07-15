@@ -1,0 +1,36 @@
+terraform {
+  required_providers {
+    azurerm = {
+      source  = "hashicorp/azurerm"
+      version = ">= 2.0"
+    }
+  }
+}
+
+provider "azurerm" {
+  features {}
+}
+
+resource "azurerm_mssql_database" "prod_sd_scus_db_mssql_stableduel" {
+  name                   = var.prod_sd_scus_db_mssql_stableduel_name
+  server_id              = var.prod_sd_scus_db_mssql_stableduel_server
+  edition                = var.prod_sd_scus_db_mssql_stableduel_edition
+  requested_service_objective_name = var.prod_sd_scus_db_mssql_stableduel_pricing_tier
+  location               = var.prod_sd_scus_db_mssql_stableduel_location
+}
+
+resource "azurerm_mssql_database" "qa_stableduel" {
+  name                   = var.qa_stableduel_name
+  server_id              = var.qa_stableduel_server
+  edition                = var.qa_stableduel_edition
+  requested_service_objective_name = var.qa_stableduel_pricing_tier
+  location               = var.qa_stableduel_location
+}
+
+resource "azurerm_mssql_database" "stableduel" {
+  name                   = var.stableduel_name
+  server_id              = var.stableduel_server
+  edition                = var.stableduel_edition
+  requested_service_objective_name = var.stableduel_pricing_tier
+  location               = var.stableduel_location
+}

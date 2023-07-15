@@ -1,0 +1,60 @@
+terraform {
+  required_providers {
+    azurerm = {
+      source  = "hashicorp/azurerm"
+      version = ">= 2.0"
+    }
+  }
+}
+
+provider "azurerm" {
+  features {}
+}
+
+module "asp_qasdscusapi_a125" {
+  source = "./modules/app_service_plan"
+
+  name                = var.asp_qasdscusapi_a125_name
+  location            = var.asp_qasdscusapi_a125_location
+  resource_group_name = var.asp_qasdscusapi_a125_resource_group
+  subscription_id     = var.asp_qasdscusapi_a125_subscription_id
+  kind                = var.asp_qasdscusapi_a125_kind
+  pricing_tier        = var.asp_qasdscusapi_a125_pricing_tier
+  number_of_apps      = var.asp_qasdscusapi_a125_number_of_apps
+}
+
+module "prod_sd_scus_api_plan" {
+  source = "./modules/app_service_plan"
+
+  name                = var.prod_sd_scus_api_plan_name
+  location            = var.prod_sd_scus_api_plan_location
+  resource_group_name = var.prod_sd_scus_api_plan_resource_group
+  subscription_id     = var.prod_sd_scus_api_plan_subscription_id
+  kind                = var.prod_sd_scus_api_plan_kind
+  pricing_tier        = var.prod_sd_scus_api_plan_pricing_tier
+  number_of_apps      = var.prod_sd_scus_api_plan_number_of_apps
+}
+
+module "qa_sd_scus_appservice" {
+  source = "./modules/app_service_plan"
+
+  name                = var.qa_sd_scus_appservice_name
+  location            = var.qa_sd_scus_appservice_location
+  resource_group_name = var.qa_sd_scus_appservice_resource_group
+  subscription_id     = var.qa_sd_scus_appservice_subscription_id
+  kind                = var.qa_sd_scus_appservice_kind
+  pricing_tier        = var.qa_sd_scus_appservice_pricing_tier
+  number_of_apps      = var.qa_sd_scus_appservice_number_of_apps
+}
+
+module "stableduelasp01" {
+  source = "./modules/app_service_plan"
+
+  name                = var.stableduelasp01_name
+  location            = var.stableduelasp01_location
+  resource_group_name = var.stableduelasp01_resource_group
+  subscription_id     = var.stableduelasp01_subscription_id
+  kind                = var.stableduelasp01_kind
+  pricing_tier        = var.stableduelasp01_pricing_tier
+  number_of_apps      = var.stableduelasp01_number_of_apps
+}

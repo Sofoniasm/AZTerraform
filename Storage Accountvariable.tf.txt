@@ -1,0 +1,60 @@
+variable "storage_accounts" {
+  type = list(object({
+    name           = string
+    type           = string
+    kind           = string
+    resource_group = string
+    location       = string
+    subscription   = string
+  }))
+  default = [
+    {
+      name           = "csb100320020d225b90"
+      type           = "Storage account"
+      kind           = "StorageV2"
+      resource_group = "cloud-shell-storage-westeurope"
+      location       = "West Europe"
+      subscription   = "StableDuel Production Subscription"
+    },
+    {
+      name           = "qasdscusstorage"
+      type           = "Storage account"
+      kind           = "StorageV2"
+      resource_group = "qa-sd-scus-api"
+      location       = "Central US"
+      subscription   = "StableDuel Production Subscription"
+    },
+    {
+      name           = "sdstrgacc01"
+      type           = "Storage account"
+      kind           = "StorageV2"
+      resource_group = "sd-test-rg01"
+      location       = "Central US"
+      subscription   = "StableDuel Production Subscription"
+    },
+    {
+      name           = "sqlvasdc6gihg4i3dq"
+      type           = "Storage account"
+      kind           = "StorageV2"
+      resource_group = "prod-sd-scus-db"
+      location       = "South Central US"
+      subscription   = "StableDuel Production Subscription"
+    },
+    {
+      name           = "sqlvash5z7ga3fofhq"
+      type           = "Storage account"
+      kind           = "StorageV2"
+      resource_group = "qa-sd-scus-db"
+      location       = "South Central US"
+      subscription   = "StableDuel Production Subscription"
+    },
+    {
+      name           = "strdev001002003"
+      type           = "Storage account"
+      kind           = "StorageV2"
+      resource_group = "rg-shared-services"
+      location       = "Central US"
+      subscription   = "StableDuel Production Subscription"
+    },
+  ]
+}
